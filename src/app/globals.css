@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors */
   --color-primary: #000000;
-  --color-secondary: #666666;
+  --color-secondary: #79736d;
+  --color-placeholder: #aaaaaa;
   --color-accent: #ffffff;
   --color-background: #fafafa;
   --color-border: #e5e5e5;
+  --color-disabled: #f3f2f2;
+  --color-text-disabled: #c2bfbc;
 
-  /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
@@ -16,14 +17,20 @@
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
 
-  /* Typography */
   --font-sans: "Helvetica", "Arial", sans-serif;
 
-  /* Breakpoints */
   --breakpoint-3xl: 1920px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 640px;
+  --breakpoint-xs: 480px;
+  --breakpoint-xxs: 360px;
 }
 
 body {
   font-family: var(--font-sans);
   color: var(--color-primary);
+  font-weight: 300;
 }

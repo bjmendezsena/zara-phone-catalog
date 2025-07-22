@@ -3,16 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "NODE_ENV=development next dev --turbopack",
+    "dev:debug": "NODE_ENV=development next dev --turbopack --inspect",
+    "build": "NODE_ENV=production next build",
+    "build:analyze": "ANALYZE=true NODE_ENV=production next build",
+    "start": "NODE_ENV=production next start",
+    "start:dev": "NODE_ENV=development next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.83.0",
+    "axios": "^1.10.0",
+    "clsx": "^2.1.1",
+    "immer": "^10.1.1",
+    "lucide-react": "^0.525.0",
+    "named-urls": "^2.0.1",
     "next": "15.4.2",
     "postcss": "^8.5.6",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-error-boundary": "^6.0.0",
+    "react-hook-form": "^7.60.0",
+    "tailwind-merge": "^3.3.1",
+    "uuid": "^11.1.0",
+    "zustand": "^5.0.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
