@@ -32,7 +32,7 @@ src/
 - **Feature-Based Structure**: Organized by business domains (product, cart)
 - **Separation of Concerns**: Clear separation between UI, business logic, and data access
 - **Custom Hooks**: Encapsulation of complex state logic and side effects
-- **Context + Zustand**: Hybrid state management for global and local state
+- **Context**: Hybrid state management for global and local state
 - **API Layer**: Centralized API management with React Query for caching
 
 ## 🚀 Technologies & Stack
@@ -46,7 +46,6 @@ src/
 
 ### State Management
 
-- **Zustand** - Lightweight state management for cart
 - **Tanstack Query** - Server state management & caching
 - **React Context** - Component-level state sharing
 
@@ -263,7 +262,7 @@ npm run test -- --coverage
 ### State Management
 
 - **Product Catalog**: Server state managed by React Query
-- **Shopping Cart**: Client state managed by Zustand with localStorage persistence
+- **Shopping Cart**: Client state managed with localStorage persistence
 - **UI State**: Local component state and React Context
 
 ### Performance Optimizations
