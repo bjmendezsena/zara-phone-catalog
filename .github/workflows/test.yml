@@ -1,0 +1,15 @@
+name: Testing application
+# On all pull requests
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test -- --coverage --coverageReporters lcov
+      - name: Check coverage
+        run: bash <(curl -s https://codecov.io/bash)
