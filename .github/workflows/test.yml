@@ -1,7 +1,8 @@
 name: Testing application
-# On all pull requests
-on: [pull_request]
-
+on:
+  push:
+    branches:
+      - main
 jobs:
   test:
     runs-on: ubuntu-latest
