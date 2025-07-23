@@ -1,8 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Enable standalone output for Docker
+  output: "standalone",
+
   images: {
     remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "prueba-tecnica-api-tienda-moviles.onrender.com",
+        port: "",
+        pathname: "/images/**",
+      },
       {
         protocol: "http",
         hostname: "prueba-tecnica-api-tienda-moviles.onrender.com",
@@ -10,6 +19,8 @@ const nextConfig: NextConfig = {
         pathname: "/images/**",
       },
     ],
+    // Enable unoptimized images for Docker environments
+    unoptimized: process.env.NODE_ENV === "production",
   },
 
   webpack: (config, { dev }) => {

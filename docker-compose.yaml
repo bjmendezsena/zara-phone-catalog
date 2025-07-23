@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+  nextjs:
+    ports:
+      - 3000:3000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NEXT_PUBLIC_API_URL=https://prueba-tecnica-api-tienda-moviles.onrender.com
+      - NEXT_PUBLIC_API_KEY=87909682e6cd74208f41a6ef39fe4191
+      - NODE_ENV=production
+    # Alternative: Use .env file
+    # env_file:
+    #   - .env

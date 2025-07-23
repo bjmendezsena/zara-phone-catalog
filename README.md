@@ -257,6 +257,104 @@ npm run test -- ProductCard.spec.tsx
 npm run test -- --coverage
 ```
 
+## 🚀 CI/CD Pipeline
+
+### GitHub Actions Workflow
+
+The project includes an automated testing pipeline that runs on every push and pull request to the `main` branch.
+
+**Features:**
+
+- ✅ **Automated Testing**: Runs full test suite on every commit
+- ✅ **Coverage Reports**: Generates and uploads coverage artifacts
+- ✅ **pnpm Support**: Optimized dependency installation with caching
+- ✅ **Multi-format Reports**: lcov, clover, and text coverage formats
+
+**Workflow Configuration** (`.github/workflows/test.yml`):
+
+```yaml
+# Triggers on push/PR to main branch
+# Uses Node.js 20 with pnpm
+# Runs tests with coverage reporting
+# Uploads coverage reports as artifacts
+```
+
+**Accessing Results:**
+
+1. **Test Results**: Visible in the Actions tab of your GitHub repository
+2. **Coverage Reports**: Download artifacts from completed workflow runs
+3. **Status Badges**: Green checkmarks appear on successful builds
+
+## 🐳 Docker Support
+
+### Using Docker Compose (Recommended)
+
+The project includes Docker Compose configuration for easy development and deployment.
+
+**Quick Start:**
+
+```bash
+# Build and start the application
+docker-compose up --build
+
+# Run in background
+docker-compose up -d
+
+# Stop the application
+docker-compose down
+```
+
+**What it includes:**
+
+- **Multi-stage build**: Optimized for production
+- **pnpm support**: Automatic package manager detection
+- **Port mapping**: Exposes application on `localhost:3000`
+- **Production ready**: Includes security and performance optimizations
+
+### Docker Configuration
+
+**Dockerfile features:**
+
+- **Multi-stage build**: Separate stages for dependencies, building, and runtime
+- **Alpine Linux**: Lightweight base image
+- **Security**: Non-root user execution
+- **Package Manager Agnostic**: Supports npm, yarn, and pnpm
+- **Production optimized**: Standalone output for minimal runtime
+
+**Build stages:**
+
+1. **Dependencies**: Install packages based on available lockfile
+2. **Builder**: Build the Next.js application
+3. **Runner**: Production runtime with minimal footprint
+
+### Manual Docker Commands
+
+```bash
+# Build the image
+docker build -t zara-phone-catalog .
+
+# Run the container
+docker run -p 3000:3000 zara-phone-catalog
+
+# Run with environment variables
+docker run -p 3000:3000 \
+  -e NEXT_PUBLIC_API_URL=your-api-url \
+  -e NEXT_PUBLIC_API_KEY=your-api-key \
+  zara-phone-catalog
+```
+
+### Environment Variables in Docker
+
+Create a `.env` file or pass environment variables:
+
+```bash
+# Using .env file
+docker-compose --env-file .env up
+
+# Using inline variables
+NEXT_PUBLIC_API_URL=your-url docker-compose up
+```
+
 ## 🎨 Development Features
 
 ### State Management
