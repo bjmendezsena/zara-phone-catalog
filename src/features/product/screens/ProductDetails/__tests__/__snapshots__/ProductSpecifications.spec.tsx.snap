@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`<ProductSpecifications/> renders without crashing 1`] = `
+"<div>
+  <div
+    class="mt-4 xl:px-[360px] px-4"
+  >
+    <h2
+      class="text-xl font-light text-primary mb-8 uppercase tracking-wide"
+    >
+      SPECIFICATIONS
+    </h2>
+    <div
+      class="space-y-1"
+    >
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          BRAND
+        </div>
+        <div
+          class="text-sm"
+        >
+          Google
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          NAME
+        </div>
+        <div
+          class="text-sm"
+        >
+          Pixel 8a
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          DESCRIPTION
+        </div>
+        <div
+          class="text-sm"
+        >
+          Descubre Pixel 8a, creado por Google. Saca fotos magníficas con la Cámara Pixel. Haz más en menos tiempo con la IA de Google, como arreglar imágenes borrosas, filtrar llamadas y aprender cosas nuevas. Sus funciones de seguridad del más alto nivel ayudan a proteger tus datos. Y se ha diseñado para durar. Todo, a un precio excepcional.
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          SCREEN
+        </div>
+        <div
+          class="text-sm"
+        >
+          6.1" OLED Actua
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          RESOLUTION
+        </div>
+        <div
+          class="text-sm"
+        >
+          2400 x 1080 pixels
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          PROCESSOR
+        </div>
+        <div
+          class="text-sm"
+        >
+          Google Tensor G3
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          MAIN CAMERA
+        </div>
+        <div
+          class="text-sm"
+        >
+          64 MP + 13 MP
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          SELFIE CAMERA
+        </div>
+        <div
+          class="text-sm"
+        >
+          13 MP
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          BATTERY
+        </div>
+        <div
+          class="text-sm"
+        >
+          4492 mAh
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          OS
+        </div>
+        <div
+          class="text-sm"
+        >
+          Android
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-4 py-4 border-b border-primary first:border-t"
+      >
+        <div
+          class="text-sm uppercase tracking-wide font-medium"
+        >
+          SCREEN REFRESH RATE
+        </div>
+        <div
+          class="text-sm"
+        >
+          120 Hz
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

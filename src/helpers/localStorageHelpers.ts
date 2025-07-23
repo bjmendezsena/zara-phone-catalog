@@ -9,7 +9,6 @@ export const getObject = <T>(key: string): T | null => {
   const value = getItem(key);
 
   if (!isValidJSON(value)) {
-    console.warn(`Invalid JSON for key: ${key}`);
     return null;
   }
   return JSON.parse(value) as T;

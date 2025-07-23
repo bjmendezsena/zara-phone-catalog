@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`<CartProvider/> should render the cart items correctly 1`] = `
+"<div>
+  <div>
+    <h1>
+      Cart Items: 
+      1
+    </h1>
+    <button>
+      Add Item
+    </button>
+    <button>
+      Remove Item
+    </button>
+    <button>
+      Clear Cart
+    </button>
+    <p>
+      Total Items: 
+      1
+    </p>
+  </div>
+</div>"
+`;

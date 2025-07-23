@@ -63,11 +63,11 @@ const CartRoute = () => {
           <div className='flex flex-row gap-2 sm:gap-4'>
             <Link
               href={"/"}
-              className='text-center flex-1 py-3 cursor-pointer border border-gray-300 text-sm uppercase tracking-wide text-secondary hover:border-primary hover:text-primary transition-colors'
+              className='text-center flex-1 py-3 cursor-pointer border-[0.5px] border-border-dark text-sm uppercase tracking-wide transition-colors'
             >
               CONTINUE SHOPPING
             </Link>
-            <div className='flex gap-6 justify-center items-center mb-2 flex-1'>
+            <div className='gap-6 justify-center items-center mb-2 flex-1 hidden md:flex'>
               <span className='text-lg font-medium uppercase tracking-wide'>
                 TOTAL
               </span>

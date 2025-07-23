@@ -1,9 +1,9 @@
 "use client";
-import { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback } from "react";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ChevronLeft } from "lucide-react";
-import { cn, formatCurrency, getValue } from "@/utils";
+import { cn, formatCurrency } from "@/utils";
 import {
   useGetProduct,
   ColorOption,
@@ -59,7 +59,7 @@ export const ProductDetails = ({
     );
     if (selectedColorData) return selectedColorData.imageUrl;
 
-    if (colorOptions.length > 0) return getValue(colorOptions[0], "imageUrl");
+    if (colorOptions.length > 0) return colorOptions[0].imageUrl;
 
     return "";
   }, [selectedColor, colorOptions]);
@@ -144,6 +144,7 @@ export const ProductDetails = ({
     });
   }, [
     product,
+    addItem,
     getCurrentColor,
     getCurrentStorage,
     getCurrentPrice,
@@ -173,8 +174,7 @@ export const ProductDetails = ({
       <div className='mb-8 px-4'>
         <button
           onClick={handleBackNavigation}
-          className='flex items-center space-x-2 text-secondary hover:text-primary transition-colors cursor-pointer'
-          title={"Go to home"}
+          className='flex items-center space-x-2 cursor-pointer'
         >
           <ChevronLeft size={20} strokeWidth={0.75} />
           <span className='text-sm uppercase tracking-wide'>BACK</span>

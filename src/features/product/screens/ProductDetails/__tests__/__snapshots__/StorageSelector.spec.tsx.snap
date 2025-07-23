@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`<StorageSelector/> renders without crashing 1`] = `
+"<div>
+  <div>
+    <h3
+      class="text-sm  mb-4 uppercase tracking-wide"
+    >
+      STORAGE 
+      <span
+        class="uppercase"
+      >
+        How much space do you need?
+      </span>
+    </h3>
+    <div
+      class="flex divide-x-4"
+    >
+      <button
+        aria-label="Select 128 GB storage"
+        class="cursor-pointer px-6 py-3 border text-sm transition-colors hover:border-primary hover:border-r border-primary bg-primary text-white"
+        data-testid="storage-option-128 GB"
+      >
+        128 GB
+      </button>
+      <button
+        aria-label="Select 256 GB storage"
+        class="cursor-pointer px-6 py-3 border text-sm transition-colors border-gray-300 text-secondary hover:border-primary hover:border-r border-r-gray-300"
+        data-testid="storage-option-256 GB"
+      >
+        256 GB
+      </button>
+    </div>
+  </div>
+</div>"
+`;

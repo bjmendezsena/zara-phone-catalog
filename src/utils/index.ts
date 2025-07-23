@@ -3,4 +3,4 @@ export * from "./uuid";
 export * from "./create-context";
 export * from "./json";
 export * from "./common";
-export * from "./currency";
+export * from "./format";

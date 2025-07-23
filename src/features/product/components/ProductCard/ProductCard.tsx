@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { IProductItem } from "@/features/product";
+import { formatCurrency } from "@/utils";
 
 interface ProductCardProps {
   product: IProductItem;
@@ -43,7 +44,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
             </span>
           </div>
           <span className='text-sm text-primary font-medium group-hover:text-white transition-colors duration-300'>
-            ${product.basePrice.toFixed(2)}
+            {formatCurrency(product.basePrice)}
           </span>
         </div>
       </div>

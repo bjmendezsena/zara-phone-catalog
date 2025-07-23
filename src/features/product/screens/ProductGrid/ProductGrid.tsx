@@ -26,6 +26,8 @@ export const ProductGrid = () => {
       >
         <div className='relative w-full'>
           <input
+            data-testid='search-input'
+            autoComplete='off'
             type='text'
             {...register("search")}
             placeholder='Buscar productos...'
@@ -37,6 +39,7 @@ export const ProductGrid = () => {
               onClick={() => reset()}
               className='absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-600 transition-colors cursor-pointer'
               aria-label='Limpiar búsqueda'
+              data-testid='clear-search-button'
             >
               <svg
                 width='16'
@@ -58,6 +61,7 @@ export const ProductGrid = () => {
           )}
         </div>
         <span
+          data-testid='search-results-count'
           className={cn(
             "col-span-full text-secondary mb-4 peer-focus:opacity-0",
             {
@@ -76,7 +80,7 @@ export const ProductGrid = () => {
         {isLoading ? (
           <div className='col-span-full flex items-center justify-center'>
             <span className='col-span-full text-center text-secondary font-light mb-4'>
-              Cargando...
+              Loading...
             </span>
           </div>
         ) : (

@@ -12,15 +12,12 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // Configuración para modos desarrollo y producción
   webpack: (config, { dev }) => {
-    // Modo Desarrollo: Servir assets sin minimizar
     if (dev) {
       config.optimization.minimize = false;
       config.optimization.minimizer = [];
       config.optimization.concatenateModules = false;
 
-      // Generar archivos separados para mejor debugging
       config.optimization.splitChunks = {
         chunks: "all",
         cacheGroups: {
@@ -34,18 +31,20 @@ const nextConfig: NextConfig = {
           },
         },
       };
+
+      config.devtool = "eval-source-map";
     } else {
-      // Modo Producción: Assets concatenados y minimizados (configuración por defecto de Next.js)
       config.optimization.minimize = true;
       config.optimization.concatenateModules = true;
+      config.devtool = "source-map";
     }
 
     return config;
   },
 
-  // Configuraciones básicas por entorno
-  swcMinify: process.env.NODE_ENV === "production",
   compress: process.env.NODE_ENV === "production",
+
+  productionBrowserSourceMaps: process.env.NODE_ENV === "development",
 };
 
 export default nextConfig;

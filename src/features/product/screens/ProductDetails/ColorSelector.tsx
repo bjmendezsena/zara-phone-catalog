@@ -19,6 +19,7 @@ export const ColorSelector = ({
       <div className='flex gap-3'>
         {colorOptions.map((color: ColorOption) => (
           <button
+            data-testid={`color-option-${color.name}`}
             key={color.name}
             onClick={() => onColorChange(color)}
             className={cn(

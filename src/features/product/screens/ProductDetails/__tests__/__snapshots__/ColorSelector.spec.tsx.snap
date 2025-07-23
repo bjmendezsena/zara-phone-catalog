@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`<ColorSelector/> renders without crashing 1`] = `
+"<div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <h3
+      class="text-sm mb-4 uppercase tracking-wide"
+    >
+      COLOR. 
+      <span
+        class="uppercase"
+      >
+        Pick your favourite
+      </span>
+    </h3>
+    <div
+      class="flex gap-3"
+    >
+      <button
+        aria-label="Select Obsidiana color"
+        class="w-[24px] h-[24px] border-2 transition-all cursor-pointer p-[2px] border-primary"
+        data-testid="color-option-Obsidiana"
+      >
+        <div
+          aria-hidden="true"
+          class="w-full h-full"
+          style="background-color: rgb(0, 0, 0);"
+        />
+      </button>
+      <button
+        aria-label="Select Porcelana color"
+        class="w-[24px] h-[24px] border-2 transition-all cursor-pointer p-[2px] border-gray-300 hover:border-primary"
+        data-testid="color-option-Porcelana"
+      >
+        <div
+          aria-hidden="true"
+          class="w-full h-full"
+          style="background-color: rgb(245, 245, 245);"
+        />
+      </button>
+      <button
+        aria-label="Select Celeste color"
+        class="w-[24px] h-[24px] border-2 transition-all cursor-pointer p-[2px] border-gray-300 hover:border-primary"
+        data-testid="color-option-Celeste"
+      >
+        <div
+          aria-hidden="true"
+          class="w-full h-full"
+          style="background-color: rgb(135, 206, 235);"
+        />
+      </button>
+    </div>
+    <span
+      class="text-xs uppercase tracking-wide min-h-[15px]"
+    >
+      Obsidiana
+    </span>
+  </div>
+</div>"
+`;

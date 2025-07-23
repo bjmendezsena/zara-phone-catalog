@@ -17,11 +17,12 @@ export const StorageSelector = ({
       <h3 className='text-sm  mb-4 uppercase tracking-wide'>
         STORAGE <span className='uppercase'>How much space do you need?</span>
       </h3>
-      <div className='flex'>
+      <div className='flex divide-x-4'>
         {storageOptions.map((storage: StorageOption, index: number) => (
           <button
             key={storage.capacity}
             onClick={() => onStorageChange(storage)}
+            data-testid={`storage-option-${storage.capacity}`}
             className={cn(
               "cursor-pointer px-6 py-3 border text-sm transition-colors border-gray-300 border-r-transparent text-secondary hover:border-primary hover:border-r",
               {

@@ -13,6 +13,6 @@ export const apiQueryKeys = {
 export const apiRoutes = {
   products: include("/products", {
     all: "",
-    one: ":id",
+    one: "%s",
   }),
 };

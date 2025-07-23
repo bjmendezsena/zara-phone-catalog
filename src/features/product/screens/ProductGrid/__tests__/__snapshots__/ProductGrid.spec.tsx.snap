@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`<ProductGrid/> renders without crashing 1`] = `
+"<div>
+  <div
+    class="w-full h-full flex flex-col items-center justify-center p-4 sm:p-8 gap-8"
+  >
+    <div
+      aria-label="Formulario de búsqueda de productos"
+      class="flex flex-col w-full gap-4 group"
+    >
+      <div
+        class="relative w-full"
+      >
+        <input
+          autocomplete="off"
+          class="w-full p-2 border-b border-primary focus:outline-none placeholder:text-placeholder peer pr-8"
+          data-testid="search-input"
+          name="search"
+          placeholder="Buscar productos..."
+          type="text"
+        />
+      </div>
+      <span
+        class="col-span-full text-secondary mb-4 peer-focus:opacity-0 opacity-0"
+        data-testid="search-results-count"
+      >
+        0
+         Results
+      </span>
+    </div>
+    <div
+      aria-label="Lista de productos"
+      class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 w-full"
+    >
+      <div
+        class="col-span-full flex items-center justify-center"
+      >
+        <span
+          class="col-span-full text-center text-secondary font-light mb-4"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

@@ -40,6 +40,7 @@ export const ProductCartItem: FC<ProductCartItemProps> = ({
             onClick={() => onRemove(item.productId)}
             className='text-red-500 hover:text-red-700 cursor-pointer transition-colors duration-200'
             aria-label={`Remove ${item.name} from cart`}
+            data-testid='remove-cart-item'
           >
             Eliminar
           </span>

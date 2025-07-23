@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`<ProductCartItem /> renders product details correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="flex w-full h-[364px]"
+  >
+    <div
+      class="flex space-x-8"
+    >
+      <div
+        class="h-full w-[262px] p-2 flex items-center justify-center rounded-md overflow-hidden"
+      >
+        <img
+          alt="BrandX Product Name"
+          class="w-full h-[90%] object-cover"
+          data-priority="true"
+          height="100"
+          src="/path/to/image.jpg"
+          width="100"
+        />
+      </div>
+      <div
+        class="flex flex-col gap-4 pt-[20%] py-[65px] h-full"
+      >
+        <div
+          class="flex flex-col"
+        >
+          <span>
+            BrandX Product Name
+          </span>
+          <span>
+            128GB | Black
+          </span>
+        </div>
+        <span>
+          999.99 EUR
+        </span>
+        <span
+          aria-label="Remove Product Name from cart"
+          class="text-red-500 hover:text-red-700 cursor-pointer transition-colors duration-200"
+          data-testid="remove-cart-item"
+        >
+          Eliminar
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
