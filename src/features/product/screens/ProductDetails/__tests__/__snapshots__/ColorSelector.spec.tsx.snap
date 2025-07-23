@@ -20,7 +20,7 @@ exports[`<ColorSelector/> renders without crashing 1`] = `
     >
       <button
         aria-label="Select Obsidiana color"
-        class="w-[24px] h-[24px] border-2 transition-all cursor-pointer p-[2px] border-primary"
+        class="w-[24px] h-[24px] border-1 transition-all cursor-pointer p-[2px] border-primary"
         data-testid="color-option-Obsidiana"
       >
         <div
@@ -31,7 +31,7 @@ exports[`<ColorSelector/> renders without crashing 1`] = `
       </button>
       <button
         aria-label="Select Porcelana color"
-        class="w-[24px] h-[24px] border-2 transition-all cursor-pointer p-[2px] border-gray-300 hover:border-primary"
+        class="w-[24px] h-[24px] border-1 transition-all cursor-pointer p-[2px] border-gray-300 hover:border-primary"
         data-testid="color-option-Porcelana"
       >
         <div
@@ -42,7 +42,7 @@ exports[`<ColorSelector/> renders without crashing 1`] = `
       </button>
       <button
         aria-label="Select Celeste color"
-        class="w-[24px] h-[24px] border-2 transition-all cursor-pointer p-[2px] border-gray-300 hover:border-primary"
+        class="w-[24px] h-[24px] border-1 transition-all cursor-pointer p-[2px] border-gray-300 hover:border-primary"
         data-testid="color-option-Celeste"
       >
         <div

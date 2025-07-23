@@ -23,7 +23,7 @@ export const ColorSelector = ({
             key={color.name}
             onClick={() => onColorChange(color)}
             className={cn(
-              "w-[24px] h-[24px] border-2 transition-all cursor-pointer p-[2px]",
+              "w-[24px] h-[24px] border-1 transition-all cursor-pointer p-[2px]",
               {
                 "border-primary ": selectedColor === color.name,
                 "border-gray-300 hover:border-primary":
